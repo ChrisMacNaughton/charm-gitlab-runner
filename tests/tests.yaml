@@ -1,0 +1,10 @@
+charm-name: gitlab-runner
+gate_bundles:
+  - bionic
+smoke_bundles:
+  - bionic
+tests: []
+target_deploy_status:
+  gitlab-runner:
+    workload-status: blocked
+    workload-status-message: gitlab-url and runner-token are required

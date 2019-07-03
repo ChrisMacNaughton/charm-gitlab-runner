@@ -1,0 +1,7 @@
+series: &series bionic
+relations: []
+applications:
+  gitlab-runner:
+    charm: ../../../gitlab-runner
+    series: *series
+    num_units: 1

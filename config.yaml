@@ -1,0 +1,20 @@
+options:
+  gitlab-url:
+    default:
+    description: "Where is your gitlab server? ( e.g. https://gitlab.com )"
+  runner-token:
+    type: string
+    default:
+    description: "The registration token for this runner"
+  tags:
+    type: string
+    default: "linux,docker"
+    description: "A comma separated list of the tags to apply to this runner"
+  run-untagged:
+    type: boolean
+    default: True
+    description: Should this runner run untagged builds
+  docker-image:
+    type: string
+    default: 'alpine:latest'
+    description: What image to use, by default, for unconfigured builds
